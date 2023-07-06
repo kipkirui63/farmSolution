@@ -7,29 +7,50 @@
     <title>Document</title>
 </head>
 <body>
-  
     <div class="navbar">
         <a href="home.html">Solution</a>
         <a href="index.html">Home</a>
         <a href="data.html">Login</a>
     </div>
 
+    <div class="wrapper">
+        <div class="container2">
+            <div class="feeds">
+                <label for="feedInput">Enter Feed Composition:</label>
+                <br>
+                <input type="text" id="feedInput1">
+                <input type="text" id="feedInput2">
+                <input type="text" id="feedInput3">
+                <input type="text" id="feedInput4">
+                <input type="text" id="feedInput5">
+                <input type="text" id="feedInput6">
+                <br>
+                <button onclick="calculateNutrients()">Calculate</button>
+            </div>
 
-    <div class="container2">
-      <div>
-        <label for="feedInput">Enter Feed Composition:</label>
-        <input type="text" id="feedInput">
-        <button onclick="calculateNutrients()">Calculate</button>
-      </div>
-      
-      <div id="nutrientDisplay">
-        <h3>Feed Nutrients:</h3>
-        <ul id="feedNutrientsList"></ul>
-        <h3>Soil Nutrient Recommendations:</h3>
-        <ul id="soilRecommendationsList"></ul>
-      </div>
+            <div id="nutrientDisplay">
+                <h3>Feed Nutrients:</h3>
+                <ul id="feedNutrientsList"></ul>
+                <h3>Soil Nutrient Recommendations:</h3>
+                <ul id="soilRecommendationsList"></ul>
+                
+                <h3>Feed Nutrients Output:</h3>
+                <textarea id="feedOutputDisplay" rows="4" cols="50"></textarea>
+                
+                <h3>Soil Recommendations Output:</h3>
+                <textarea id="soilOutputDisplay" rows="4" cols="50"></textarea>
+            </div>
+        </div>
 
-    <footer></footer>
+        <footer class="footer">
+            <div class="contact-info">
+                <h4>Contact Information:</h4>
+                <p>Email: info@example.com</p>
+                <p>Phone: 123-456-7890</p>
+                <p>Address: 123 Street, City, Country</p>
+            </div>
+            <p class="copyright">&copy; 2023 Your Company</p>
+        </footer>
     </div>
 </body>
 </html>

@@ -350,12 +350,24 @@ h1{
 
 .container2 {
     position: relative;
-    width: 800px;
-    height: 700px;
+    width: 500px;
+    height: 600px;
     align-self: center;
-    padding: 50px;
+    padding: 40px;
+    margin-top: 50px;
     justify-content: space-around;
+    background-color:#A9D95A;
     
 }
+
+.feeds{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    
+}
+
+
 
 
