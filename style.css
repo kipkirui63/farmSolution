@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 body{
-    background-image: url(Growers-Header.webp);
+    background-image: url(karsten-wurth-UbGYPMbMYP8-unsplash.jpg);
     align-items: center;
     justify-content: center;
     display: flex;
@@ -357,6 +357,7 @@ h1{
     margin-top: 60px;
     justify-content: space-around;
     background-color: rgb(169, 217, 90, 70%);
+    background-image: url('karsten-wurth-UbGYPMbMYP8-unsplash.jpg');
     
 }
 
@@ -383,11 +384,12 @@ textarea{
 
 .footer {
     background-color: #D9D9D9;
+    background-image: url('karsten-wurth-UbGYPMbMYP8-unsplash.jpg');
     padding: 20px;
     text-align: center;
     position: fixed;
     bottom: 0;
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -397,7 +399,7 @@ textarea{
 .footer .navigation-links a {
     margin-right: 10px;
     color: #000;
-    text-decoration: none;
+    text-decoration: black;
 }
 
 .footer .social-icons img {
