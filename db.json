@@ -1,0 +1,208 @@
+{
+    "feeds": [
+        {
+            "name": "balanced_diet",
+            "composition": {
+              "carbohydrates": {
+                "min": 50,
+                "max": 70
+              },
+              "amino_acids": {
+                "min": 12,
+                "max": 16
+              },
+              "fatty_acids": {
+                "min": 4,
+                "max": 8
+              },
+              "minerals": {
+                "min": {
+                  "calcium": 0.2,
+                  "phosphorus": 0.3
+                },
+                "max": {
+                  "calcium": 0.5,
+                  "phosphorus": 0.6
+                }
+              },
+              "vitamins": {
+                "min": {
+                  "vitaminA": 80,
+                  "vitaminE": 1
+                },
+                "max": {
+                  "vitaminA": 120,
+                  "vitaminE": 3
+                }
+              },
+              "water": {
+                "min": 60,
+                "max": 80
+              }
+            }
+          },
+          {
+            "name": "Hay",
+            "composition": {
+              "protein": 7,
+              "fiber": 30,
+              "carbohydrates": 50,
+              "vitamins": {
+                "vitaminA": 200,
+                "vitaminD": 10
+              },
+              "minerals": {
+                "calcium": 0.5,
+                "phosphorus": 0.2
+              }
+            }
+          },
+      {
+        "name": "Hay",
+        "composition": {
+          "protein": 7,
+          "fiber": 30,
+          "carbohydrates": 50,
+          "vitamins": {
+            "vitaminA": 200,
+            "vitaminD": 10
+          },
+          "minerals": {
+            "calcium": 0.5,
+            "phosphorus": 0.2
+          }
+        }
+      },
+      {
+        "name": "Straw",
+        "composition": {
+          "protein": 3,
+          "fiber": 70,
+          "carbohydrates": 20,
+          "vitamins": {
+            "vitaminA": 100,
+            "vitaminE": 5
+          },
+          "minerals": {
+            "calcium": 0.2,
+            "phosphorus": 0.1
+          }
+        }
+      },
+      {
+        "name": "Oats",
+        "composition": {
+          "protein": 13,
+          "fiber": 10,
+          "carbohydrates": 60,
+          "vitamins": {
+            "vitaminA": 100,
+            "vitaminE": 2
+          },
+          "minerals": {
+            "calcium": 0.1,
+            "phosphorus": 0.4
+          }
+        }
+      },
+      {
+        "name": "Molasses",
+        "composition": {
+          "protein": 0,
+          "fiber": 0,
+          "carbohydrates": 80,
+          "vitamins": {
+            "vitaminB6": 0.1,
+            "vitaminC": 0.5
+          },
+          "minerals": {
+            "calcium": 0.2,
+            "phosphorus": 0.1
+          }
+        }
+      },
+      {
+        "name": "Barley",
+        "composition": {
+          "protein": 12,
+          "fiber": 15,
+          "carbohydrates": 70,
+          "vitamins": {
+            "vitaminB1": 0.5,
+            "vitaminB3": 2
+          },
+          "minerals": {
+            "calcium": 0.2,
+            "phosphorus": 0.3
+          }
+        }
+      },
+      {
+        "name": "Silage",
+        "composition": {
+          "protein": 12,
+          "fiber": 25,
+          "carbohydrates": 50,
+          "vitamins": {
+            "vitaminC": 20,
+            "vitaminK": 15
+          },
+          "minerals": {
+            "calcium": 0.3,
+            "phosphorus": 0.2
+          }
+        }
+      },
+      {
+        "name": "Compressed and Pelleted Feeds",
+        "composition": {
+          "protein": 15,
+          "fiber": 10,
+          "carbohydrates": 50,
+          "vitamins": {
+            "vitaminB1": 2,
+            "vitaminB2": 3
+          },
+          "minerals": {
+            "calcium": 0.8,
+            "phosphorus": 0.5
+          }
+        }
+      },
+      {
+        "name": "Oils and Mixed Rations",
+        "composition": {
+          "protein": 10,
+          "fiber": 5,
+          "carbohydrates": 20,
+          "fat": 50,
+          "vitamins": {
+            "vitaminE": 10,
+            "vitaminK": 5
+          },
+          "minerals": {
+            "calcium": 0.4,
+            "phosphorus": 0.3
+          }
+        }
+      },
+      
+      {
+        "name": "Sprouted Grains and Legumes",
+        "composition": {
+          "protein": 18,
+          "fiber": 15,
+          "carbohydrates": 40,
+          "vitamins": {
+            "vitaminA": 150,
+            "vitaminB6": 5
+          },
+          "minerals": {
+            "calcium": 0.6,
+            "phosphorus": 0.4
+          }
+        }
+      }
+    ]
+  }
+  
