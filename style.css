@@ -354,9 +354,9 @@ h1{
     height: 600px;
     align-self: center;
     padding: 40px;
-    margin-top: 50px;
+    margin-top: 60px;
     justify-content: space-around;
-    background-color:#A9D95A;
+    background-color: rgb(169, 217, 90, 70%);
     
 }
 
@@ -368,6 +368,72 @@ h1{
     
 }
 
+.input-field {
+    margin-bottom: 10px;
+    background-color: #D9D9D9;
+  }
+  
 
 
+textarea{
+    background-color: #D9D9D9;
+    box-shadow: #000000;
+    border-color: #000000 ;
+}
+
+.footer {
+    background-color: #D9D9D9;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 130px;
+}
+
+.footer .navigation-links a {
+    margin-right: 10px;
+    color: #000;
+    text-decoration: none;
+}
+
+.footer .social-icons img {
+    margin-right: 0px;
+    height: 20px;
+    width: 20px;
+}
+
+
+.Navigate,
+.social-icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-icons a {
+    margin: 5px;
+  }
+
+.Navigate a {
+    margin: 6px;
+}
+
+body,
+.container2{
+    flex: 1;
+    margin-bottom: 42px; /* Adjust the value as needed */
+}
+
+.container1{
+    margin-bottom: 30px;
+}
+
+
+.contact-info{
+    justify-content: space-evenly;
+}
 
