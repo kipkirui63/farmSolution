@@ -7,59 +7,61 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="navbar">
-        <a href="home.html">Solution</a>
-        <a href="index.html">Home</a>
-        <a href="data.html">Login</a>
-    </div>
+  <div class="navbar">
+    <a href="home.html">Solution</a>
+    <a href="index.html">Home</a>
 
-    <div class="wrapper">
-        <div class="container2">
-            <div class="feeds">
-                <label for="feedInput">Enter Feed Composition:</label>
-                <br>
-                <input type="text" id="feedInput1" class="input-field">
-                <input type="text" id="feedInput2" class="input-field">
-                <input type="text" id="feedInput3" class="input-field">
-                <input type="text" id="feedInput4" class="input-field">
-                <input type="text" id="feedInput5" class="input-field">
-                <input type="text" id="feedInput6" class="input-field">
-                <br>
-                <button onclick="calculateNutrients()">Calculate</button>
-            </div>
+    <a href="data.html">Records</a>
+</div>
 
-            <div id="nutrientDisplay">
-                
-                <h3>Feed Nutrients Output:</h3>
-                <textarea id="feedOutputDisplay" rows="4" cols="50"></textarea>
-                
-                <h3>Soil Recommendations Output:</h3>
-                <textarea id="soilOutputDisplay" rows="4" cols="50"></textarea>
-            </div>
-        </div>
-
-        
-    </div>
-    <footer class="footer">
-      <div class="contact-info">
-          <h4>Contact Information</h4>
-          <p>Email: enocksang8356@.com</p>
-          <p>Address: 123 Duruma Street, Nairobi, Kenya</p>
-          <p class="copyright">&copy; 2023 Saniit LTD</p>
+  <div class="wrapper">
+    <div class="container2">
+      <div class="feeds">
+        <label for="feedInput"><h3>Enter Feed Composition:</h3></label>
+        <input type="text" id="feedInput1" class="input-field">
+        <input type="text" id="feedInput2" class="input-field">
+        <input type="text" id="feedInput3" class="input-field">
+        <input type="text" id="feedInput4" class="input-field">
+        <input type="text" id="feedInput5" class="input-field">
+        <input type="text" id="feedInput6" class="input-field">
+        <br>
+        <button onclick="calculateNutrients()">Calculate</button>
       </div>
-      <div class="Navigate">
+
+      <div id="nutrientDisplay">
+        <h3>Feed Nutrients:</h3>
+        <ul id="feedNutrientsList"></ul>
+        <h3>Nutrient Recommendations:</h3>
+        <ul id="nutrientRecommendationsList"></ul>
+      </div>
+
+      <h3>Feed Nutrients Output:</h3>
+      <textarea id="feedOutputDisplay" rows="4" cols="50" readonly></textarea>
+                
+      <h3>Nutrients Recommendations Output:</h3>
+      <textarea id="nutrientsOutputDisplay" rows="4" cols="50" readonly></textarea>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="contact-info">
+        <h4>Contact Information</h4>
+        <p>Email: enocksang8356@gmail.com</p>
+        <p>Address: 123 Duruma Street, Nairobi, Kenya</p>
+        <p class="copyright">&copy; 2023 Saniit LTD</p>
+    </div>
+    <div class="Navigate">
       <h4>Navigate</h4>
       <a href="#">Careers</a>
       <a href="#">Investor relations</a>
       <a href="#">Crop nutrition</a>
-  </div>
-  <div class="social-icons">
+    </div>
+    <div class="social-icons">
       <h4>Follow Us</h4>
       <a href="#"><img src="facebook-removebg-preview.png" alt="Facebook"></a>
       <a href="#"><img src="twitter-removebg-preview.png" alt="Twitter"></a>
       <a href="#"><img src="instagram-removebg-preview.png" alt="Instagram"></a>
-  </div>
-      
+    </div>
   </footer>
 
   <script src="script.js"></script>
