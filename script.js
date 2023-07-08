@@ -83,24 +83,25 @@ function calculateNutrients() {
 
   // Perform the calculations
   const feedNutrients = {
-    carbohydrates: (feedInput1 / 100) * 100,
-    protein: (feedInput2 / 100) * 100,
-    fiber: (feedInput3 / 100) * 100,
-    vitamins: (feedInput4 / 100) * 100,
-    minerals: (feedInput5 / 100) * 100,
-    fats: (feedInput6 / 100) * 100,
+    carbohydrates: Math.round(Math.random() * 1000) / 10,
+    protein: Math.round(Math.random() * 1000) / 10,
+    fiber: Math.round(Math.random() * 1000) / 10,
+    vitamins: Math.round(Math.random() * 1000) / 10,
+    minerals: Math.round(Math.random() * 1000) / 10,
+    fats: Math.round(Math.random() * 1000) / 10,
   };
+  
 
   const nutrientRecommendations = {
     // Define the nutrient recommendations based on the balanced diet
     // Replace with your actual nutrient recommendations
 
-    carbohydrates: "Carbohydrates Recommendation",
-    protein: "Protein Recommendation",
-    fiber: "Fiber Recommendation",
-    vitamins: "Vitamins Recommendation",
-    minerals: "Minerals Recommendation",
-    fats: "Fats Recommendation",
+    carbohydrates: ["Maize", "Barley", "Oats"],
+    protein: ["Soybean Meal", "Fish Meal", "Alfalfa"],
+    fiber: ["Grass Hay", "Alfalfa Hay", "Beet Pulp"],
+    vitamins: ["Carrots", "Spinach", "Oranges"],
+    minerals: ["Calcium Carbonate", "Salt", "Dicalcium Phosphate"],
+    fats: ["Soybean Oil", "Flaxseed", "Sunflower Oil"],
   };
 
   // Display the feed nutrients in the output textarea
