@@ -93,16 +93,20 @@ function calculateNutrients() {
   
 
   const nutrientRecommendations = {
-    // Define the nutrient recommendations based on the balanced diet
-    // Replace with your actual nutrient recommendations
-
-    carbohydrates: ["Maize", "Barley", "Oats"],
-    protein: ["Soybean Meal", "Fish Meal", "Alfalfa"],
-    fiber: ["Grass Hay", "Alfalfa Hay", "Beet Pulp"],
-    vitamins: ["Carrots", "Spinach", "Oranges"],
-    minerals: ["Calcium Carbonate", "Salt", "Dicalcium Phosphate"],
-    fats: ["Soybean Oil", "Flaxseed", "Sunflower Oil"],
+    carbohydrates: getRandomExamples(["Maize", "Barley", "Oats", "Wheat", "Rice Bran", "Molasses"], 3),
+    protein: getRandomExamples(["Soybean Meal", "Fish Meal", "Alfalfa", "Cottonseed Meal", "Peas", "Sunflower Meal"], 3),
+    fiber: getRandomExamples(["Grass Hay", "Alfalfa Hay", "Beet Pulp", "Timothy Hay", "Corn Stalks", "Wheat Bran"], 3),
+    vitamins: getRandomExamples(["Carrots", "Spinach", "Oranges", "Apples", "Kale", "Broccoli"], 3),
+    minerals: getRandomExamples(["Calcium Carbonate", "Salt", "Dicalcium Phosphate", "Magnesium Oxide", "Copper Sulfate", "Zinc Oxide"], 3),
+    fats: getRandomExamples(["Soybean Oil", "Flaxseed", "Sunflower Oil", "Coconut Oil", "Fish Oil", "Palm Oil"], 3),
   };
+  
+  // Function to randomly select examples from an array
+  function getRandomExamples(array, count) {
+    const shuffledArray = array.sort(() => 0.5 - Math.random());
+    return shuffledArray.slice(0, count);
+  }
+  
 
   // Display the feed nutrients in the output textarea
   document.getElementById("feedOutputDisplay").value = JSON.stringify(feedNutrients);
@@ -154,3 +158,56 @@ function addAnimalRow() {
 
 // Add event listener to the "Add Animal" button
 document.getElementById('addAnimalButton').addEventListener('click', addAnimalRow);
+
+
+
+//*dropdown
+
+// Add event listeners to the circles
+const beefCircle = document.querySelector('.beef');
+const dairyCircle = document.querySelector('.dairy');
+const goatsCircle = document.querySelector('.goats');
+const calfCircle = document.querySelector('.calf');
+
+beefCircle.addEventListener('click', toggleDropDown);
+dairyCircle.addEventListener('click', toggleDropDown);
+goatsCircle.addEventListener('click', toggleDropDown);
+calfCircle.addEventListener('click', toggleDropDown);
+
+function toggleDropdown() {
+  const dropdownContainer = this.querySelector('.dropdown-container');
+  dropdownContainer.classList.toggle('show');
+}
+
+// Function to toggle the dropdown container
+function toggleDropDown() {
+  // Hide all dropdown containers
+  const dropdownContainers = document.querySelectorAll('.dropdown-container');
+  dropdownContainers.forEach((container) => {
+    container.style.display = 'none';
+  });
+
+  // Show the clicked dropdown container
+  const dropdownContainer = this.querySelector('.dropdown-container');
+  dropdownContainer.style.display = 'block';
+}
+
+
+function toggleDropdown(button) {
+  const dropdownContainer = button.nextElementSibling;
+  dropdownContainer.classList.toggle('show');
+}
+
+
+function toggleDropdown(id) {
+  const dropdown = document.getElementById(id + '-dropdown');
+  dropdown.classList.toggle('show');
+}
+
+function toggleDropdown(dropdownId) {
+  var dropdown = document.getElementById(dropdownId);
+  dropdown.classList.toggle("show");
+}
+
+
+
