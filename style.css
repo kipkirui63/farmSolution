@@ -17,6 +17,13 @@ text{
     margin-right: 20px;
 
 }
+header{
+    
+    justify-content: center;
+    margin-bottom: 0px;
+    position: absolute;
+    float: left;
+}
 
 
 .container{
@@ -29,9 +36,12 @@ text{
 
 /* CSS code in style.css file */
 .navbar {
+    overflow: hidden;
+    position: sticky;
+    position: -webkit-sticky;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 20px;
+    right: 20px;
 }
 
 .navbar a {
@@ -42,6 +52,10 @@ text{
     font-size: 30px;
     font-weight: 0px;
     margin-right: 30px;
+}
+
+.navbar a.left{
+    float: left;
 }
 
 /* CSS code in style.css file */
