@@ -210,4 +210,70 @@ function toggleDropdown(dropdownId) {
 }
 
 
+/*PUT */
+function updateFeedData(feedId, updatedData) {
+  fetch(`https://feedsandnutrients.onrender.com/feeds/${feedId}`, {
+    method: 'PUT',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(updatedData)
+  })
+  .then(response => response.json())
+  .then(data => {
+    console.log('Feed data updated:', data);
+    // Handle the updated data accordingly
+  })
+  .catch(error => {
+    console.error('Error:', error);
+    // Handle the error
+  });
+}
+
+
+
+updateFeedData(feedId, updatedData);
+
+
+/*DELETE */
+function deleteFeedData(feedId) {
+  fetch(`https://feedsandnutrients.onrender.com/feeds/${feedId}`, {
+    method: 'DELETE'
+  })
+  .then(response => {
+    if (response.ok) {
+      console.log('Feed data deleted');
+      // Handle the deletion success
+    } else {
+      console.error('Error:', response.status);
+      // Handle the deletion error
+    }
+  })
+  .catch(error => {
+    console.error('Error:', error);
+    // Handle the error
+  });
+
+
+
+/*POST */
+function createFeedData(newData) {
+  fetch('https://feedsandnutrients.onrender.com/feeds', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(newData)
+  })
+  .then(response => response.json())
+  .then(data => {
+    console.log('New feed data created:', data);
+    // Handle the created data accordingly
+  })
+  .catch(error => {
+    console.error('Error:', error);
+    // Handle the error
+  });
+}
+
 
