@@ -253,6 +253,7 @@ function deleteFeedData(feedId) {
     console.error('Error:', error);
     // Handle the error
   });
+}
 
 
 
