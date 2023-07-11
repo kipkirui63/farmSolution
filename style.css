@@ -70,7 +70,7 @@ header{
 
 .growth{
     height: 250px;
-    width: 600px;
+    width: 800px;
     background-color: #A9D95A;
 }
 .growth  p{
@@ -89,7 +89,7 @@ header{
 
 .black{
     height: 300px;
-    width: 300px;
+    width: 500px;
     background-color: #000000;
 
 }
@@ -107,7 +107,7 @@ button{
 
 .cows{
     height: 300px;
-    width: 300px;
+    width: 700px;
     background-image: url(istockphoto-943434640-170667a.webp);
 }
 
